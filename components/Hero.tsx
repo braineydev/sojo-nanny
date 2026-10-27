@@ -1,3 +1,5 @@
+import { HeroScrollButton } from "@/components/HeroScrollButton";
+
 const call = process.env.NEXT_PUBLIC_CALL_NUMBER ?? "+254113781473";
 
 export function Hero() {
@@ -16,7 +18,10 @@ export function Hero() {
         </div>
         <div className="hero-photo-credit">Gentle care, close to home <span>01 / 01</span></div>
       </div>
-      <div className="hero-under"><span>CARE FOR YOUR FAMILY, WHEREVER LIFE TAKES YOU</span><a href="#services">Explore our services <span aria-hidden="true">↓</span></a></div>
+      <div className="hero-under">
+        <span>CARE FOR YOUR FAMILY, WHEREVER LIFE TAKES YOU</span>
+        <HeroScrollButton />
+      </div>
     </section>
   );
 }
