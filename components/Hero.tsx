@@ -1,4 +1,5 @@
 import { HeroScrollButton } from "@/components/HeroScrollButton";
+import { HeroVideoModal } from "@/components/HeroVideoModal";
 
 const call = process.env.NEXT_PUBLIC_CALL_NUMBER ?? "+254113781473";
 
@@ -7,20 +8,20 @@ export function Hero() {
     <section className="hero-wrap" aria-labelledby="hero-title">
       <div className="hero-panel">
         <div className="hero-content">
-          <p className="hero-kicker"><span /> SOJO NANNY · PROFESSIONAL CHILDCARE</p>
+          <p className="hero-kicker"><span /> SOJO NANNY {"\u00b7"} PROFESSIONAL CHILDCARE</p>
           <h1 id="hero-title">Care you can trust.<br /><em>Room to breathe.</em></h1>
           <p className="hero-description">Thoughtful day, overnight and travel care for families who want dependable support and more peace of mind.</p>
           <div className="hero-actions">
-            <a href="#services" className="hero-primary">Find the care you need <span aria-hidden="true">↗</span></a>
-            <a href={`tel:${call}`} className="hero-secondary">Call Sojo Nanny <span aria-hidden="true">↗</span></a>
+            <HeroVideoModal />
+            <a href={`tel:${call}`} className="hero-secondary">Call Sojo Nanny <span aria-hidden="true">{"\u2197"}</span></a>
           </div>
-          <p className="hero-proof"><span aria-hidden="true">✳</span> More than seven years caring for families</p>
+          <p className="hero-proof"><span aria-hidden="true">{"\u2733"}</span> More than seven years caring for families</p>
         </div>
         <div className="hero-photo-credit">Gentle care, close to home <span>01 / 01</span></div>
+        <HeroScrollButton />
       </div>
       <div className="hero-under">
         <span>CARE FOR YOUR FAMILY, WHEREVER LIFE TAKES YOU</span>
-        <HeroScrollButton />
       </div>
     </section>
   );

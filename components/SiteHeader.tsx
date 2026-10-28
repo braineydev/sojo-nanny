@@ -10,15 +10,16 @@ export function SiteHeader() {
   return (
     <header className="site-header" onKeyDown={(event) => event.key === "Escape" && closeMenu()}>
       <div className="header-main">
-        <a className="brand-mark" href="#top" aria-label="Sojo Nanny home" onClick={closeMenu}>
+        <a className="brand-mark" href="/" aria-label="Sojo Nanny home" onClick={closeMenu}>
           <Image src="/logo1.png" width={100} height={100} alt="Sojo Nanny Care" className="header-logo" priority />
         </a>
         <nav id="primary-navigation" className={`site-nav${menuOpen ? " is-open" : ""}`} aria-label="Main navigation">
-          <a href="#services" onClick={closeMenu}>Our care</a>
-          <a href="#approach" onClick={closeMenu}>Our approach</a>
-          <a href="#book" onClick={closeMenu}>Enquire</a>
+          <a href="/#services" onClick={closeMenu}>Our care</a>
+          <a href="/about" onClick={closeMenu}>About</a>
+          <a href="/#approach" onClick={closeMenu}>Our approach</a>
+          <a href="/#book" onClick={closeMenu}>Enquire</a>
         </nav>
-        <a className="header-contact" href="#book" onClick={closeMenu}>Let&apos;s talk <span aria-hidden="true">↗</span></a>
+        <a className="header-contact" href="/#book" onClick={closeMenu}>Let&apos;s talk <span aria-hidden="true">{"\u2197"}</span></a>
         <button
           className={`mobile-menu-toggle${menuOpen ? " is-open" : ""}`}
           type="button"

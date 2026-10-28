@@ -5,7 +5,7 @@ Sojo Nanny is a childcare services website for families looking for day care, ov
 ## Features
 
 - Responsive homepage with service information and a mobile navigation menu
-- Hero scroll arrow and hero call to action that link to the care services cards
+- Floating hero scroll arrow, introductory video modal, and About page with the Sojo Nanny video
 - Service cards that open a preselected booking enquiry modal
 - Enquiries submitted through a validated API route to Supabase
 - WhatsApp and telephone contact links
